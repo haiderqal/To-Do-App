@@ -39,7 +39,8 @@ body {
 
 
 .lbl {
-    
+    font-size: 40px;
+    padding: 15px;
 }
 
 .formList {
@@ -56,5 +57,5 @@ body {
     justify-content: center;
     font-size: 25px;
     padding: 24px 48px;
-    text-align: center;
+    text-align: left;
 }
