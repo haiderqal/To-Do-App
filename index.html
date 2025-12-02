@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-    </style>
+    <link type="image/png" sizes="16x16" rel="icon" href="images/favicon.png">
+
   </head>
   <body>
     <div class="sheet">
@@ -19,8 +18,9 @@
       <button class="listButton">Enter your List</button>
       <form class="formList">
         <label class="lbl" for="inputBox">Enter a to-do:</label>
-        <textarea type="text" id="inputBox">
+        <textarea type="text" id="inputBox" maxlength="100"></textarea>
       </form>
+      <h2 id="maxAlert">Character limit reached</h2>
     </div>
     <script src="main.js"></script>
   </body>
