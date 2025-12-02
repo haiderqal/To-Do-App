@@ -58,4 +58,5 @@ body {
     font-size: 25px;
     padding: 24px 48px;
     text-align: left;
+    resize: none;
 }
