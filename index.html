@@ -15,13 +15,37 @@
         Welcome to the To Do It app, where you can remind yourself of what
         things you have to do
       </h2>
-      <button class="listButton">Enter your List</button>
-      <form class="formList">
+      <button id="listButton">Enter your List</button>
+      <form id="formList">
         <label class="lbl" for="inputBox">Enter a to-do:</label>
         <textarea type="text" id="inputBox" maxlength="100"></textarea> <button id="subbut"> Submit</button>
       </form>
       <h2 id="maxAlert">Character limit reached</h2>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js">
+
+      const form = document.getElementById("formList");
+
+
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+
+        
+      })
+
+    </script>
   </body>
 </html>
+
+
+<!-- 
+
+1. It has a input field where you submit.
+2. Make the submit button send it to the second page.
+3. The second page shows the submitted goals displayed.
+4. The second page has it listed in order
+5. theres a delete button.
+
+
+-->
