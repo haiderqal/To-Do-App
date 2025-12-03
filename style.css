@@ -66,7 +66,16 @@ body {
 }
 
 #maxAlert {
-    color: red;
+    color: rgb(255, 0, 0);
     padding: 0px;
     margin: 0px;
+    visibility: hidden;
+}
+
+#subbut {
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: rgb(102, 177, 102);
+    font-size: 30px;
 }
