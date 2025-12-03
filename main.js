@@ -17,3 +17,16 @@ function limitText() {
     alertH.style.visibility = "hidden";
   }
 }
+
+const form = document.getElementById("formList");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log("working");
+  const inputBoxValue = inputBox.value;
+
+  localStorage.setItem("input-box", inputBoxValue);
+});
+
+
+window.location.href = "next.html"
