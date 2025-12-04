@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-    --background: #0d2a44;
+    --background: #0d2b45;
+    --primary-color: #133858;
     --text-color: #d4a256;
     --accent-color: #66b166;
 }
@@ -15,8 +16,8 @@
 
 
 body {
-    --text-color: #d4a256;    
-    --background: #0d2a44;
+    color:var(--text-color);    
+    background-color: var(--background);
 }
 
 .sheet {
@@ -61,4 +62,61 @@ body {
     font: inherit;
     color: var(--text-color);
     caret: var(--text-color);
+}
+
+.todo {
+    margin-bottom: 10px;
+    padding: 0 16px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.todo .todo-text {
+    padding: 15px;
+    padding-right: 0px;
+    flex-grow: 1;
+}
+
+.delete-button {
+    padding: 3px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: gray;
+}
+
+.delete-button svg{
+    transition: 300ms ease;
+}
+
+.delete-button:hover svg{
+    fill: red;
+}
+
+.custom-checkbox {
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    min-height: 20px;
+    min-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox{
+    background-color: var(--accent-color);
+}
+
+input[type="checkbox"]:checked ~ .custom-checkbox svg{
+    fill: var(--primary-color);
+}
+
+input[type="checkbox"]:checked ~ .todo-text{
+    
 }

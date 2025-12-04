@@ -88,6 +88,12 @@ body {
     background: none;
     color: white;
 }
+
+#inputBox:focus {
+    outline: none;
+}
+
+#add-butt
 /* 
                 background: none;
                 border: 2px solid var();
@@ -105,8 +111,18 @@ body {
 
 #mySub {
     padding: 17px 30px;
-    margin: 30px;
+    margin: 10px;
     border-radius: 20px;
-    background-color: #66b166;
+    background-color: #535353;
     font-size: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    height: 100%;
+}
+
+#mySub:focus {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
