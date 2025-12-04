@@ -20,13 +20,9 @@ function limitText() {
 
 const form = document.getElementById("formList");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  console.log("working");
-  const inputBoxValue = inputBox.value;
+let inputValue;
 
-  localStorage.setItem("input-box", inputBoxValue);
-});
-
-
-window.location.href = "next.html"
+document.getElementById("mySub").onclick = function() {
+    inputValue = inputBox.value;
+    console.log(inputValue);
+}

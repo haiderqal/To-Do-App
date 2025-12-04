@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+
+:root {
+    --background: #0d2a44;
+    --text-color: #d4a256;
+    --accent-color: #66b166;
+}
+
 * {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -9,8 +16,12 @@
 
 
 body {
-    color: rgb(212, 162, 86);
-    background-color: rgb(13, 42, 68);
+    color: var(--text-color);
+    background-color: var(--background);
+    min-height: 100vh;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -19,14 +30,18 @@ body {
     color: rgb(212, 162, 86);
     margin: auto;
     text-align: center;
-    background-color: rgb(13, 42, 68);
+    background-color: var(--background);
 }
 
 .he1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
     padding: 70px 10px 10px 10px;
     justify-content: center;
-    color: rgb(212, 162, 86);
-    margin: auto;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -67,7 +82,19 @@ body {
     resize: none;
     width: 700px;
     height: 40px;
+    box-sizing: border-box;
+    border: 2px solid var(--text-color);
+    caret-color: var(--text-color);
+    background: none;
+    color: white;
 }
+/* 
+                background: none;
+                border: 2px solid var();
+                border-radius: 1000px;
+                font: inherit;
+                color: white;
+                caret-color: var(--text-color); */
 
 #maxAlert {
     color: rgb(255, 0, 0);
@@ -76,10 +103,10 @@ body {
     visibility: hidden;
 }
 
-#subbut {
+#mySub {
     padding: 17px 30px;
     margin: 30px;
     border-radius: 20px;
-    background-color: rgb(102, 177, 102);
+    background-color: #66b166;
     font-size: 30px;
 }

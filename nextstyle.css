@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+    --background: #0d2a44;
+    --text-color: #d4a256;
+    --accent-color: #66b166;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+
+body {
+    --text-color: #d4a256;    
+    --background: #0d2a44;
+}
+
+.sheet {
+    justify-content: center;
+    --text-color: #d4a256;
+    margin: auto;
+    text-align: center;
+    --background: #0d2a44; 
+}
+
+.he1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 70px 10px 10px 10px;
+    justify-content: center;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.he2 {
+    padding: 40px;
+}
+
+.wrapper {
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#todo-input {
+    box-sizing: border-box;
+    padding: 12px 20px;
+    width: 100%;
+    background: none;
+    border: 2px solid var();
+    border-radius: 1000px;
+    font: inherit;
+    color: var(--text-color);
+    caret: var(--text-color);
+}
