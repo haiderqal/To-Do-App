@@ -20,9 +20,4 @@ function limitText() {
 
 const form = document.getElementById("formList");
 
-let inputValue;
-
-document.getElementById("mySub").onclick = function() {
-    inputValue = inputBox.value;
-    console.log(inputValue);
-}
+console.log("RUN");

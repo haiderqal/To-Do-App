@@ -4,7 +4,8 @@
     --background: #0d2b45;
     --primary-color: #133858;
     --text-color: #d4a256;
-    --accent-color: #66b166;
+    --accent-color: #ffffff7e;
+    --secondary-color: #4A4D57;
 }
 
 * {
@@ -77,6 +78,7 @@ body {
     padding: 15px;
     padding-right: 0px;
     flex-grow: 1;
+    transition: 200ms ease;
 }
 
 .delete-button {
@@ -107,6 +109,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    transition: 200ms ease;
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked ~ .custom-checkbox{
@@ -118,5 +122,26 @@ input[type="checkbox"]:checked ~ .custom-checkbox svg{
 }
 
 input[type="checkbox"]:checked ~ .todo-text{
-    
+    text-decoration: line-through;
+    color: var(--secondary-color);
 }
+
+input[type="checkbox"]{
+    display: none;
+}
+@media(max-width: 500px){
+    html{
+        font-size: 12pt;
+    }
+    #add-button{
+        position: unset;
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px;
+        height: auto;
+    }
+    h1 {
+        margin-top: 50px;
+        font-size: 15vw;
+    }
+} 
