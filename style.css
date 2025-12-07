@@ -178,6 +178,7 @@ body {
     display: flex;
     align-items: center;
     background-color: var(--primary-color);
+    user-select: none;
 }
 
 .todo .todo-text {
